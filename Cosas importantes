@@ -1,0 +1,16 @@
+##Idea Juego de memorizar cartas
+##1 Jugador
+##Con puntaje + tiempo
+##consiste en escoger dificultad (facil - normal - dificil) que hace variar la cantidad de cartas
+##consta de memorizar la ubicacion de las cartas y mientras menos tiempo se demore, mas puntaje obtendra, Distribucion de puntos
+##Mientras mas dificultad, mas cantidad de cartas trampa.
+##  Multiplicador de tiempo. ej (x2 x1 x0.1 x0.2)
+
+
+
+## Temporizador - Randomizador
+
+##Pasos 1- Escojer la dificultad      2- jugar   3- Preguntar si desea guardar puntaje mientras se muestra en pantalla     
+## 4- Si se desea guardar, se debe ingresar 3 iniciales   4.1- Si no quiere guardar puntaje, terminar juego         5- Luego preguntar si quiere volver a jugar
+## 5.1- Si dice que si, volver a la seleccionar dificultad          5.2- Si dice que no, terminar juego
+
