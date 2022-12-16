@@ -1,0 +1,12 @@
+Python utiliza la sangría para indicar bloques de código, mientras que JavaScript utiliza llaves.
+
+Python es un lenguaje de tipado dinámico, mientras que JavaScript es un lenguaje de tipado suelto. Esto significa que en Python no necesita especificar 
+el tipo de una variable cuando la declara, mientras que en JavaScript sí.
+
+El código Python se ejecuta en el lado del servidor, mientras que el código JavaScript se ejecuta en el lado del cliente (en el navegador).
+
+Ambos lenguajes soportan la programación orientada a objetos, pero tienen enfoques diferentes. Python utiliza clases para definir 
+objetos, mientras que JavaScript utiliza prototipos para definir objetos.
+
+Python a menudo se utiliza para la computación científica, el análisis de datos y el aprendizaje automático.
+JavaScript se utiliza principalmente para el desarrollo web y la creación de aplicaciones web.
