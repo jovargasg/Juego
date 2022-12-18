@@ -1,32 +1,32 @@
 import pygame
 
-BLACK					    =			(  0,   0,   0)
-DARK_BLUE				  =			(  0,   0, 100)
-BLUE					    =			(  0,   0, 255)
-DARK_GREEN			  =			(  0, 100,   0)
+BLACK					=			(  0,   0,   0)
+DARK_BLUE				=			(  0,   0, 100)
+BLUE					=			(  0,   0, 255)
+DARK_GREEN			    =			(  0, 100,   0)
 GREENISH_BLUE			=			(  0, 100, 100)
-LIGHT_TURQUOISE		=			(  0, 100, 255)
-GREEN					    =			(  0, 255,   0)
+LIGHT_TURQUOISE		    =			(  0, 100, 255)
+GREEN					=			(  0, 255,   0)
 WATERY_GREEN			=			(  0, 255, 100)
-CYAN					    =			(  0, 255, 255)
+CYAN					=			(  0, 255, 255)
 
-RED						    =			(255,   0,   0)
-DARK_PINK				  =			(255,   0, 100)
-PINK					    =			(255,   0, 255)
+RED						=			(255,   0,   0)
+DARK_PINK				=			(255,   0, 100)
+PINK					=			(255,   0, 255)
 ORANGE				    =			(255, 100,   0)
-RED_PINK				  =			(255, 100, 100)
+RED_PINK				=			(255, 100, 100)
 MAGENT				    =			(255, 100, 255)
-YELLOW					  =			(255, 255,   0)
+YELLOW					=			(255, 255,   0)
 LIGHT_YELLOW			=			(255, 255, 100)
-WHITE					    =			(255, 255, 255)
+WHITE					=			(255, 255, 255)
 
-REDDISH_BROWN		  =			(100,   0,   0)
-PURPLE					  =			(100,   0, 100)
+REDDISH_BROWN		    =			(100,   0,   0)
+PURPLE					=			(100,   0, 100)
 MUSTARD				    =			(100,   0, 255)
-GREENISH_BROWN		=			(100, 100,   0)
-GREY					    =			(100, 100, 100)
-LIGHT_GREY        =     (200, 200, 200) 
-TURQUOISE				  =			(100, 100, 255)
+GREENISH_BROWN		    =			(100, 100,   0)
+GREY					=			(100, 100, 100)
+LIGHT_GREY              =           (200, 200, 200) 
+TURQUOISE				=			(100, 100, 255)
 
 size = (1000,700)
 screen = pygame.display.set_mode(size)
@@ -36,85 +36,62 @@ class Dibujo:
 
     def dibujar_rectangulos(self):
         #Cuadros primera fila
-        pygame.draw.rect(self.screen, GREY, (0,0, 100, 100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(100,0,100,100))
-        pygame.draw.rect(self.screen, GREY, (200,0, 100, 100))
-        pygame.draw.rect(self.screen, LIGHT_GREY, (300,0, 100, 100))
-        pygame.draw.rect(self.screen, GREY, (400,0, 100, 100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(500,0,100,100))
-        pygame.draw.rect(self.screen, GREY, (600,0, 100, 100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(700,0,100,100))
-        pygame.draw.rect(self.screen, GREY, (800,0, 100, 100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(900,0,100,100))
+        for i in range(10):
+            x = i*200
+            pygame.draw.rect(self.screen, GREY, (x,0, 100, 100))
+        for i in range(10):
+            y = i*200+100
+            pygame.draw.rect(self.screen, LIGHT_GREY, (y,0, 100, 100))
+        
         
         #Cuadros segunda fila
-        pygame.draw.rect(self.screen, LIGHT_GREY, (0,100,100,100))
-        pygame.draw.rect(self.screen, GREY, (100,100,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY, (200,100,100,100))
-        pygame.draw.rect(self.screen, GREY, (300,100,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY, (400,100,100,100))
-        pygame.draw.rect(self.screen, GREY, (500,100,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY, (600,100,100,100))
-        pygame.draw.rect(self.screen, GREY, (700,100,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY, (800,100,100,100))
-        pygame.draw.rect(self.screen, GREY, (900,100,100,100))
+        for i in range(10):
+            x = i*200
+            pygame.draw.rect(self.screen, LIGHT_GREY, (x,100, 100, 100))
+        for i in range(10):
+            y = i*200+100
+            pygame.draw.rect(self.screen, GREY, (y,100, 100, 100))
+        
 
         #Cuadros tercera fila
-        pygame.draw.rect(self.screen, GREY, (0,200,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY, (100,200,100,100))
-        pygame.draw.rect(self.screen, GREY, (200,200,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY, (300,200,100,100))
-        pygame.draw.rect(self.screen, GREY, (400,200,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY, (500,200,100,100))
-        pygame.draw.rect(self.screen, GREY, (600,200,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY, (700,200,100,100))
-        pygame.draw.rect(self.screen, GREY, (800,200,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY, (900,200,100,100))
+        for i in range(10):
+            x = i*200
+            pygame.draw.rect(self.screen, GREY, (x,200, 100, 100))
+        for i in range(10):
+            y = i*200+100
+            pygame.draw.rect(self.screen, LIGHT_GREY, (y,200, 100, 100))
+        
 
         #Cuadros cuarta fila
-        pygame.draw.rect(self.screen, LIGHT_GREY,(0,300,100,100))
-        pygame.draw.rect(self.screen, GREY,(100,300,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(200,300,100,100))
-        pygame.draw.rect(self.screen, GREY,(300,300,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(400,300,100,100))
-        pygame.draw.rect(self.screen, GREY,(500,300,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(600,300,100,100))
-        pygame.draw.rect(self.screen, GREY,(700,300,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(800,300,100,100))
-        pygame.draw.rect(self.screen, GREY,(900,300,100,100))
+        for i in range(10):
+            x = i*200
+            pygame.draw.rect(self.screen, LIGHT_GREY, (x,300, 100, 100))
+        for i in range(10):
+            y = i*200+100
+            pygame.draw.rect(self.screen, GREY, (y,300, 100, 100))
+        
 
         #Cuadros quinta fila
-        pygame.draw.rect(self.screen, GREY,(0,400,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(100,400,100,100))
-        pygame.draw.rect(self.screen, GREY,(200,400,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(300,400,100,100))
-        pygame.draw.rect(self.screen, GREY,(400,400,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(500,400,100,100))
-        pygame.draw.rect(self.screen, GREY,(600,400,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(700,400,100,100))
-        pygame.draw.rect(self.screen, GREY,(800,400,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(900,400,100,100))
-
+        for i in range(10):
+            x = i*200
+            pygame.draw.rect(self.screen, GREY, (x,400, 100, 100))
+        for i in range(10):
+            y = i*200+100
+            pygame.draw.rect(self.screen, LIGHT_GREY, (y,400, 100, 100))
+        
         #Cuadros sexta fila
-        pygame.draw.rect(self.screen, LIGHT_GREY,(0,500,100,100))
-        pygame.draw.rect(self.screen, GREY,(100,500,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(200,500,100,100))
-        pygame.draw.rect(self.screen, GREY,(300,500,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(400,500,100,100))
-        pygame.draw.rect(self.screen, GREY,(500,500,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(600,500,100,100))
-        pygame.draw.rect(self.screen, GREY,(700,500,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(800,500,100,100))
-        pygame.draw.rect(self.screen, GREY,(900,500,100,100))
+        for i in range(10):
+            x = i*200
+            pygame.draw.rect(self.screen, LIGHT_GREY, (x,500, 100, 100))
+        for i in range(10):
+            y = i*200+100
+            pygame.draw.rect(self.screen, GREY, (y,500, 100, 100))
+        
 
         #Cuadros Septima fila
-        pygame.draw.rect(self.screen, GREY,(0,600,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(100,600,100,100))
-        pygame.draw.rect(self.screen, GREY,(200,600,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(300,600,100,100))
-        pygame.draw.rect(self.screen, GREY,(400,600,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(500,600,100,100))
-        pygame.draw.rect(self.screen, GREY,(600,600,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(700,600,100,100))
-        pygame.draw.rect(self.screen, GREY,(800,600,100,100))
-        pygame.draw.rect(self.screen, LIGHT_GREY,(900,600,100,100))
+        for i in range(10):
+            x = i*200
+            pygame.draw.rect(self.screen, GREY, (x,600, 100, 100))
+        for i in range(10):
+            y = i*200+100
+            pygame.draw.rect(self.screen, LIGHT_GREY, (y,600, 100, 100))
